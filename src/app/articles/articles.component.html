@@ -1,0 +1,17 @@
+<h4>gros form en plein milieu</h4>
+
+<form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+
+    <div>Titre</div>
+    <div><input placeholder="Entrez un titre ici" formControlName="title" /></div>
+
+    <div>Description</div>
+    <div><textarea placeholder="Entrez une description" formControlName="description"></textarea></div>
+
+    <button type="submit" [disabled]="!addForm.valid">ddd</button>
+</form>
+
+<h4>articles list</h4>
+<div *ngFor="let n of names | async">
+    {{n}}
+</div>
