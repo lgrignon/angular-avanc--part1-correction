@@ -5,6 +5,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { ArticlesComponent } from './articles/articles.component';
+import { AppRoutingModule } from './app-routing.module';
+import { RouterModule, Routes } from '@angular/router'
 
 @NgModule({
   declarations: [
@@ -14,7 +16,8 @@ import { ArticlesComponent } from './articles/articles.component';
   imports: [
     BrowserModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

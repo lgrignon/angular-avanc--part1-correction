@@ -1,0 +1,11 @@
+<nav>
+    <li><a routerLink="/articles">Articles</a> </li>
+    <li><a routerLink="/admin">Admin</a> </li>
+</nav>
+<p>types:</p>
+
+<div>
+    <div *ngFor="let t of types | async">
+        {{t}}
+    </div>
+</div>
