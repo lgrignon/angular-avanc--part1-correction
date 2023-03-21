@@ -25,6 +25,6 @@ export class ArticlesComponent {
   }
 
   onSubmit() {
-    this.articlesService.pushArticle(this.addForm.getRawValue() as Article);
+    this.articlesService.pushArticles(this.addForm.getRawValue() as Article);
   }
 }
